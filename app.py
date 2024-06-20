@@ -49,7 +49,7 @@ def main():
             with st.spinner("Loading and processing the image..."):
                 image = preprocess_image(uploaded_file)
 
-                model = tf.keras.models.load_model(r"C:\Users\PC\Desktop\DNN_Models\Car_image_classification_M4_94a.h5")  # Replace with your model path
+                model = tf.keras.models.load_model("Car_image_classification_M4_94a.h5")  # Replace with your model path
 
                 predicted_class, second_highest_class, probabilities, sorted_indices = make_prediction(model, image)
 

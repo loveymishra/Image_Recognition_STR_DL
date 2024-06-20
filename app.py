@@ -24,7 +24,7 @@ def make_prediction(model, image):
 
 
 def main():
-    st.title("F1 Car Image Classification App")
+    st.title("Car Image Classification App")
 
     st.write("Upload an image to classify it. The app supports the following car brands:")
     col1, col2 = st.columns(2)
